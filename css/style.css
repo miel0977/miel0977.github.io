@@ -1,0 +1,353 @@
+/* 노멀라이즈 */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.noto {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.na{
+    font-family: 'NanumSquare', sans-serif,  !important;
+    font-weight: lighter;
+}
+
+
+/* 라이브러리 */
+.row:after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+.cell {
+    float: left;
+}
+
+.cell-right {
+    float: right;
+}
+
+
+
+/* 스타일 */
+/* header */
+.header {
+    height: 80px;
+    background-color: #FFB301;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.6);
+}
+
+.header li {
+    font-size: 26px;
+    font-weight: 200;
+    line-height: 80px;
+    margin-right: 60px;
+}
+
+.header li:last-child {
+    margin-right: 80px;
+}
+
+.header li:hover {
+    font-weight: 400;
+    color: white;
+}
+
+.header li:hover {
+    font-weight: 400;
+    color: white;
+}
+
+/* main */
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.main .wrap {
+    width: auto;
+    height: 300px;
+    font-size: 76px;
+    position: absolute;
+    right: 8%;
+    top: 41%;
+}
+
+.main .wrap .t-txt {
+    font-size: 28px;
+    line-height: 22px;
+}
+
+.main .wrap .b-txt {
+    font-size: 100px;
+    font-weight: 300;
+}
+
+video {
+    width: 97%;
+    height: 100%;
+}
+
+
+/* profile */
+.profile {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/profile-02-02.png);
+    background-repeat: no-repeat;
+    background-size: 96%;
+    background-position: left bottom;
+}
+
+
+/* porfolio */
+.porfolio {
+    background-color: #FFB301;
+}
+
+.porfolio .wrap {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.porfolio .wrap a .box {
+    width: 400px;
+    height: 400px;
+    margin-right: 40px;
+    position: relative;
+    
+}
+.porfolio .wrap a .box:nth-child(3n) {
+    margin-right: 0px;
+}
+.porfolio .wrap a .box .imac{
+    width: 400px;
+    height: 400px;
+     background-image: url(../img/imac_%D0%9C%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D0%BD%D0%B0%D1%8F%20%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%201.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: absolute;
+}
+.porfolio .wrap a .box .b{
+    top: 17%;
+    left: 9.2%;
+    width: 327px;
+    height: 190px;
+    position: absolute;
+    transition: background-position 10s;
+}
+.porfolio .wrap .b:hover{
+    background-position: center bottom;
+}
+.porfolio .wrap .box .txt{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.porfolio .wrap .b01{
+    background-image: url(../img/athird.png);
+    background-repeat: no-repeat;
+    background-size: 114%;
+    background-position: center top;
+}
+.porfolio .wrap .b04{
+    background-image: url(../img/leica.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center top;
+}
+.porfolio .wrap .b05{
+    background-image: url(../img/converse.png);
+    background-repeat: no-repeat;
+    background-size: 105%;
+    background-position: center top;
+}
+
+
+/* graphic */
+.graphic {
+    background-color: #FFB301;
+}
+.graphic .slide .box {
+    width: 1000px;
+    height: 680px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.graphic .s01 .box{
+    background-image: url(../img/graphic-01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center;
+}
+.graphic .s02 .box{
+    background-image: url(../img/graphic-02.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.graphic .s03 .box{
+    background-image: url(../img/graphic-03.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.graphic .s04 .box{
+    background-image: url(../img/graphic-04.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.graphic .s05 .box{
+    background-image: url(../img/graphic-05.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.graphic .fp-prev {
+    width: 80px;
+    height: 80px;
+    background-image: url(../img/arrow-l-01.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center top;
+    border-width: 0px 0px 0px 0;
+}
+.fp-controlArrow.fp-prev{
+    left: 13%;
+}
+.fp-controlArrow.fp-next{
+    right: 13%;
+}
+.graphic .fp-next {
+    width: 80px;
+    height: 80px;
+    background-image: url(../img/arrow-r-01.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center top;
+    border-width: 0px 0px 0px 0;
+}
+
+.graphic .fp-slidesNav {
+    bottom: 5%;
+    left: 46% !important;
+}
+.fp-slidesNav ul li a span{
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    opacity: 60%;
+    margin: 0px;
+}
+.fp-slidesNav ul li a.active span{
+    background-color: white;
+    opacity: 100%;
+    margin: 0px;
+}
+.graphic .fp-slidesNav ul li span {
+    background-color: white;
+
+}
+
+/*footer*/
+.footer {
+    background-image: url(../img/footer.png);
+    background-repeat: no-repeat;
+    background-size: 77%;
+    background-position: left bottom;
+    left: 2%;
+    position: relative;
+}
+
+.footer .wrap {
+    height: 900px;
+}
+
+.footer .wrap .wrap01 {
+    width: auto;
+    height: 300px;
+    position: absolute;
+    right: 14%;
+    top: 30%;
+}
+
+
+.footer .wrap .wrap01 .t-txt {
+    font-size: 39px;
+    line-height: 30px;
+}
+
+.footer .wrap .wrap01 .m-txt {
+    font-size: 80px;
+    font-weight: 300;
+}
+
+.footer .wrap .wrap01 .wrap02 {
+    width: auto;
+    height: auto;
+    font-size: 22px;
+    line-height: 37px;
+    margin-top: 13%;
+    margin-left: 2%;
+
+}
+
+.footer .wrap .wrap01 .wrap02 .left {
+    font-weight: 20;
+    margin-right: 8%;
+}
+
+.footer .wrap .wrap01 .wrap02 .left .green {
+    color: #3c6b4a;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+.custom ~ #fp-nav ul li {
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+.custom ~ #fp-nav ul li a span {
+    background-color: #0b7305;
+    width: 14px;
+    height: 13px;
+    opacity: 50%;
+    margin: 0px;
+}
+
+.custom ~ #fp-nav ul li a.active span {
+    opacity: 100%;
+    margin: 0px;
+}
